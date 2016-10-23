@@ -39,12 +39,51 @@ public class Controller implements Initializable {
     private void draw() {
         GraphicsContext gc=canvas.getGraphicsContext2D();
         gc.clearRect(0,0,900,900);
-        gc.setFill(bgColor.getValue());
+        //gc.setFill(bgColor.getValue());
+        gc.setFill(Color.RED);
+        //LEFT M
+            //left
+        brazenchem(30,30,30,400,gc);//left
+        brazenchem(50,70,50,400,gc);//right
+        brazenchem(30,30,50,30,gc);//verh
+        brazenchem(30,400,50,400,gc);//nith
+            //45
+        brazenchem(50,70,130,250,gc);//nith
+        brazenchem(50,30,130,210,gc);//verh
+            //right
+        brazenchem(210,70,210,400,gc);//left
+        brazenchem(230,30,230,400,gc);//right
+        brazenchem(210,30,230,30,gc);//verh
+        brazenchem(210,400,230,400,gc);//nith
+            //45
+        brazenchem(210,70,130,250,gc);//nith
+        brazenchem(210,30,130,210,gc);//verh
+
+
+
+        //RIGHT 3
+        brazenchem(300,50,300,70,gc);
+        brazenchem(300,50,330,30,gc);
+        brazenchem(330,30,380,30,gc);
+        brazenchem(380,30,410,50,gc);//|
+        brazenchem(410,50,410,120,gc);
+        brazenchem(410,120,385,150,gc);
+        brazenchem(385,150,410,180,gc);
+        brazenchem(410,180,410,250,gc);
+        brazenchem(410,250,430,280,gc);
+
+
+
+
+
+
+
+      //  brazenchem(50,30,50,400,gc);
         /*Liter M*/
-        brazenchem(30,30,30,400,gc); //left line
+      /*  brazenchem(30,30,30,400,gc); //left line
         brazenchem(30,30,140,200,gc);//left 45 line
         brazenchem(240,30,240,400,gc);//right line
-        brazenchem(240,30,140,200,gc);//right 45 line
+        brazenchem(240,30,140,200,gc);//right 45 line*/
 
 
         brenenchemCircul(600,125,92, gc);
@@ -55,7 +94,7 @@ public class Controller implements Initializable {
 
     }
     private void brazenchem(int x1, int y1, int x2, int y2, GraphicsContext gc){
-        int width=Integer.valueOf(widthF.getText());
+        int width=1;
 
         int xErr=0; int yErr=0;
         int dx=x2-x1; int dy=y2-y1;
