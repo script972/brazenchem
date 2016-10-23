@@ -40,7 +40,7 @@ public class Controller implements Initializable {
         GraphicsContext gc=canvas.getGraphicsContext2D();
         gc.clearRect(0,0,900,900);
         //gc.setFill(bgColor.getValue());
-        gc.setFill(Color.RED);
+        gc.setFill(bgColor.getValue());
         //LEFT M
             //left
         brazenchem(30,30,30,400,gc);//left
@@ -62,15 +62,33 @@ public class Controller implements Initializable {
 
 
         //RIGHT 3
-        brazenchem(300,50,300,70,gc);
+        brazenchem(300,50,300,75,gc);
         brazenchem(300,50,330,30,gc);
         brazenchem(330,30,380,30,gc);
-        brazenchem(380,30,410,50,gc);//|
+        brazenchem(380,30,410,50,gc);
         brazenchem(410,50,410,120,gc);
         brazenchem(410,120,385,150,gc);
-        brazenchem(385,150,410,180,gc);
-        brazenchem(410,180,410,250,gc);
-        brazenchem(410,250,430,280,gc);
+        brazenchem(385,150,440,190,gc);
+        brazenchem(440,190,440,310,gc);
+        brazenchem(440,310,400,335,gc);
+        brazenchem(400,335,315,335,gc);
+        brazenchem(315,335,290,300,gc);
+        brazenchem(290,300,290,275,gc);
+
+        brazenchem(285,45,285,75,gc);
+        brazenchem(285,45,330,15,gc);
+        brazenchem(285,75,300,75,gc);
+        brazenchem(330,15,380,15,gc);
+        brazenchem(380,15,425,45,gc);
+        brazenchem(425,45,425,120,gc);
+        brazenchem(425,120,405,145,gc);
+        brazenchem(405,145,455,180,gc);
+        brazenchem(454,179,454,318,gc);
+        brazenchem(454,317,400,352,gc);
+        brazenchem(400,352,310,352,gc);
+        brazenchem(310,352,275,305,gc);
+        brazenchem(275,305,275,275,gc);
+        brazenchem(275,275,290,275,gc);
 
 
 
